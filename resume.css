@@ -1,0 +1,255 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    flex-direction: column;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 1px;
+    font-size: medium;
+    border-bottom: 2px solid #000;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+ul {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    list-style-type: disc;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 2px;
+}
+
+li {
+    margin-right: 10px;
+    text-align: left;
+    padding-top: 2px;
+}
+
+li::marker {
+    color: black;
+}
+
+.resume-container {
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    text-align: center;
+    position: relative;
+    display: block;
+    top: 20px;
+    overflow-y: auto;
+    max-height: max-content;
+}
+
+.pdf-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pdf-button:hover {
+    outline: 3px solid black;
+}
+
+.pdf-container {
+    display: none;
+    width: 80%;
+    height: 90vh;
+    border: none;
+    margin-top: 40px;
+}
+
+.filter-buttons {
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 10;
+    top: 20px;
+    display: inline-block;
+}
+
+.filter-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.filter-button:hover {
+    outline: 3px solid black;
+}
+
+.python-btn {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.frontend-btn {
+    background-color: orangered;
+    color: white;
+}
+
+.c-sharp-btn {
+    background-color: purple;
+    color: white;
+}
+
+.db-btn {
+    background-color: rgb(255, 234, 0);
+    color: black;
+}
+
+.power-btn {
+    background-color: rgb(186, 43, 237);
+    color: white;
+}
+
+.devops-btn {
+    background-color: blue;
+    color: white;
+}
+
+.active {
+    outline: 3px solid green;
+}
+
+li span.highlight-python {
+    background: cornflowerblue;
+    color: white;
+    border-radius: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+li span.highlight-frontend {
+    background: orangered;
+    background-size: 105% 105%;
+    color: white;
+    border-radius: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+li span.highlight-c-sharp {
+    background: purple;
+    background-size: 105% 105%;
+    color: white;
+    border-radius: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+li span.highlight-db {
+    background: rgb(255, 234, 0);
+    background-size: 105% 105%;
+    color: black;
+    border-radius: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+li span.highlight-power {
+    background: rgb(186, 43, 237);
+    background-size: 105% 105%;
+    color: white;
+    border-radius: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+li span.highlight-devops {
+    background: blue;
+    background-size: 105% 105%;
+    color: white;
+    border-radius: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.query_result {
+    display: none;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: green
+}
+
+.visit-text {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 10px 15px;
+    color: navy;
+    border: #000;
+    border-style: solid;
+    border-radius: 5px;
+    cursor: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: green;
+    font-weight: bold;
+}
+
+.highlight-input{
+    background-color: rgb(214, 214, 214);
+    color: black;
+}
+
+#searchInput {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: small;
+    width: 110px; 
+    height: 20px;
+    background-color: rgb(214, 214, 214);
+    color: black;
+}
