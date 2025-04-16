@@ -78,6 +78,7 @@ function toggleResume() {
         });
 
         listItems.forEach(item => {
+            // name changes here
             item.classList.remove("highlight-python", "highlight-frontend", "highlight-c-sharp", "highlight-db", "highlight-power", "highlight-devops", "highlight-input");
         });
         
@@ -105,6 +106,7 @@ function toggleResume() {
 
 function filterKeywords(button) {
     const keywordClasses = {
+        // name changes here
         'highlight-python': ['py', 'py-db', 'py-po', 'py-fe', 'py-fe-db'],
         'highlight-frontend': ['fe', 'fe-po', 'fe-db-po', 'py-fe', 'py-fe-db'],
         'highlight-c-sharp': ['c-db', 'c-dev'],
@@ -114,6 +116,7 @@ function filterKeywords(button) {
     };
     let filterType = button.getAttribute("data-filter");
     let queryResultButton = document.querySelector(".query_result");
+    console.log(previousFilter, activeFilter)
     if (previousFilter !== null) {
         let previousListItems = document.querySelectorAll("." + previousFilter);
         previousListItems.forEach( item => {
@@ -121,22 +124,32 @@ function filterKeywords(button) {
         });
 
         queryResultButton.style.display = "none";
-        let activeQueryButton = document.querySelector(".active");
-        activeQueryButton.classList.remove("active");
+        let activeQueryButton = document.querySelectorAll(".filter-button");
+        activeQueryButton.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        let stringFiltered = document.querySelectorAll("li span");
+        stringFiltered.forEach( line => {
+            line.classList.remove("highlight-input");
+        });
 
         if (filterType === previousFilter ){
             previousFilter = null;
             return;
         }
     }
-
+    
     let search_filter = document.getElementById('searchInput');
-    if (search_filter.value !== ''){
-        search_filter.value = '';
+    search_filter.value = '';
+
+    if (search_filter.value != ""){
+        
         let stringFiltered = document.querySelectorAll("li span");
         stringFiltered.forEach( line => {
             line.classList.remove("highlight-input");
-        })
+        });
+
     }
 
     var lineCount = 0;
@@ -161,7 +174,15 @@ function filterKeywords(button) {
     document.getElementById("s").textContent = s;
     document.getElementById("lineRate").textContent = lineRate;
     
+    /*
+    NOT REALLY NEEDED FOR BUTTONS
+    Actually, needed unless managed in the switch between input type
+    */
+    queryResultButton.style.color = lineCount === 0 ? "red" : "green";
+    
+    
     const filterTypeName = {
+        // name changes here
         'highlight-python': 'python',
         'highlight-frontend': 'frontend',
         'highlight-c-sharp': 'c_sharp',
@@ -175,25 +196,39 @@ function filterKeywords(button) {
 function filterByUserInput(userInput) {
     let listItems = document.querySelectorAll("li span");
     let totalLines = listItems.length;
-    let queryResultButton = document.querySelector(".query_result");
+    let queryResultButtons = document.querySelectorAll(".filter-button"); // look at the active and the class name on the BUTTONS
+    let queryResult = document.querySelector(".query_result");
 
     // optimize
     // WHY: is this interfering with the highlighting
     // let activeQueryButton = document.querySelector(".active");
-    //activeQueryButton.classList.remove("active");
+    // activeQueryButton.classList.remove("active");
 
     const filterString = userInput.trim().toLowerCase();
     let lineCount = 0;
 
     listItems.forEach(item => {
+        // name changes here
+        
         // optimize, search what is the current ? previous filter
         item.classList.remove("highlight-python", "highlight-frontend", "highlight-c-sharp", "highlight-db", "highlight-power", "highlight-devops", "highlight-input");
+        //item.classList.remove("data-action", previousFilter);
     });
 
-    if (filterString === "") {
-        queryResultButton.style.display = "none";
+    
+    if (filterString == "") {
+        queryResult.style.display = "none";
         return;
     }
+
+   /*
+    let activeQueryButton = document.querySelector(".active");
+    activeQueryButton.classList.remove("active");
+    */
+    queryResultButtons.forEach(item => {
+        item.classList.remove("active");
+    });
+    
 
     listItems.forEach(item => {
         if (item.textContent.toLowerCase().includes(filterString)) {
@@ -213,8 +248,11 @@ function filterByUserInput(userInput) {
     document.getElementById("s").textContent = s;
     document.getElementById("lineRate").textContent = lineRate;
 
-    queryResultButton.style.display = "block";
+    queryResult.style.color = lineCount === 0 ? "red" : "green";
+
+    queryResult.style.display = "block";
     activeFilter = filterString;
+    previousFilter = filterString;
 }
 
 async function toLink(link) {
