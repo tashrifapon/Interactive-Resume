@@ -1,3 +1,5 @@
+/* name changes in this file too */
+
 body {
     display: flex;
     justify-content: center;
@@ -109,31 +111,37 @@ li::marker {
     outline: 3px solid black;
 }
 
+/* name changes here too */
 .python-btn {
     background-color: cornflowerblue;
     color: white;
 }
 
+/* name changes here too */
 .frontend-btn {
     background-color: orangered;
     color: white;
 }
 
+/* name changes here too */
 .c-sharp-btn {
     background-color: purple;
     color: white;
 }
 
+/* name changes here too */
 .db-btn {
     background-color: rgb(255, 234, 0);
     color: black;
 }
 
+/* name changes here too */
 .power-btn {
     background-color: rgb(186, 43, 237);
     color: white;
 }
 
+/* name changes here too */
 .devops-btn {
     background-color: blue;
     color: white;
@@ -143,6 +151,7 @@ li::marker {
     outline: 3px solid green;
 }
 
+/* name changes here too */
 li span.highlight-python {
     background: cornflowerblue;
     color: white;
@@ -151,6 +160,7 @@ li span.highlight-python {
     padding-right: 3px;
 }
 
+/* name changes here too */
 li span.highlight-frontend {
     background: orangered;
     background-size: 105% 105%;
@@ -160,6 +170,7 @@ li span.highlight-frontend {
     padding-right: 3px;
 }
 
+/* name changes here too */
 li span.highlight-c-sharp {
     background: purple;
     background-size: 105% 105%;
@@ -169,6 +180,7 @@ li span.highlight-c-sharp {
     padding-right: 3px;
 }
 
+/* name changes here too */
 li span.highlight-db {
     background: rgb(255, 234, 0);
     background-size: 105% 105%;
@@ -178,6 +190,7 @@ li span.highlight-db {
     padding-right: 3px;
 }
 
+/* name changes here too */
 li span.highlight-power {
     background: rgb(186, 43, 237);
     background-size: 105% 105%;
@@ -187,6 +200,7 @@ li span.highlight-power {
     padding-right: 3px;
 }
 
+/* name changes here too */
 li span.highlight-devops {
     background: blue;
     background-size: 105% 105%;
