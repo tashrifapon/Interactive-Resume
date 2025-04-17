@@ -7,14 +7,14 @@
 
 ## 📚 Table of Contents
 - ? <a href="#-why-i-built-it">Why I Built It</a>
-  - [Why You Should Too](#-unintended-goodies)
+  - ✅ [Why You Should Too](#unintended-goodies)
 - ✨ <a href="#-features">Features</a>
 - 📣 <a href="#-testimonials">Testimonials From Professionals</a>
-- 📦 <a href="#️-adapt-it-for-you">Adapt It For You!</a>
-- ⚙️ <a href="#-setup-instructions">Setup Instructions</a>
-  - [Directory Structure](#-directory-structure)
+- 📦 <a href="#-adapt-it-for-you">Adapt It For You!</a>
+- ⚙️ <a href="#%EF%B8%8F-setup-instructions">Setup Instructions</a>
+  - [Directory Structure](#directory-structure)
 - 📈 <a href="#-next-steps">Next Steps</a>
-- ☎️ <a href="#-contact-for-help-or-collaboration">Contact (For Help or Collaboration)</a>
+- ☎️ <a href="#%EF%B8%8F-contact-for-help-or-collaboration">Contact (For Help or Collaboration)</a>
 - 🤝 [Helpful Notes](#-helpful-notes)
 
 ---
