@@ -25,6 +25,8 @@ I started of focusing primarily in the backend, so my earlier work (like my webs
 ### First Steps
 I thought I would just make it a bit more acceptable: a background color and some formatting (centering a div, LOL). Me being me (curious, passionate, and data-centric), I started doing more (elaborated further on).
 ### Unintended Goodies
+<details>
+<summary>Click to Expand</summary>
 <ul>
   <li>
     <h4>Birdseye View:</h4>
@@ -86,11 +88,16 @@ I thought I would just make it a bit more acceptable: a background color and som
     </ul>
   </li>
 </ul>
+</details>
 
 ---
 
 ## ✨ Features
 ### 🎇 UI/UX
+
+<details>
+<summary>Click to Expand</summary>
+
 - Buttons:
   - Color-Coded Highlighting
   - Active Border & Hover
@@ -104,7 +111,13 @@ I thought I would just make it a bit more acceptable: a background color and som
 - Quick Metrics (Top-Right):
   - Total Visits
   - Which Formats Have Been Chosen
+
+</details>
+
 ### 💻 Backend & Metrics 📊
+<details>
+<summary>Click to Expand</summary>
+
 #### User Interaction Metrics:
 - Buttons
 - Links
@@ -116,6 +129,8 @@ I thought I would just make it a bit more acceptable: a background color and som
 #### ⛓️ APIs:
 - Internal: Read & Write Metrics
 - External: Geolocation
+</details>
+
 ### Feature-Service Matrix
 <table>
   <tr>
@@ -248,13 +263,18 @@ I thought I would just make it a bit more acceptable: a background color and som
 ##### Change The Following
 
 ### Firstly, The Resume
+<details>
+<summary>Click to Expand</summary>
+
 #### Static (PDF Version)
 - If you use a different name for your resume file, then "TASE" in "TASE.pdf" will need to be replaced.
 
 #### HTML Version
 - Change the content
 
-### Mores Files
+</details>
+
+### More Files
 ##### These have comments (up to top and throughout) regarding the changes needed
 - resume.css
 - resume.js
