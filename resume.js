@@ -90,7 +90,7 @@ function toggleResume() {
         pdfContainer.style.display = 'block';
         button.textContent = 'HTML Version';
         button.style.backgroundColor = '#005eff';
-        pdfContainer.src = 'static/TASE.pdf#navpanes=1&zoom=Auto';
+        pdfContainer.src = 'static/TASE.pdf#zoom=auto';
         search_filter.value = '';
 
         document.querySelector(".filter-buttons").style.display = 'none';
