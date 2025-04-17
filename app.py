@@ -44,7 +44,7 @@ def get_ip_info(ip):
 @app.route('/static/resume.json', methods = ['GET'])
 def show_visits_resume():
     passkey = request.args.get('passkey')
-    if not passkey or passkey != passkey_visits_resume:
+    if not passkey or passkey != passkey_resume:
         return redirect(url_for("show_resume"))
     
     return send_from_directory(
