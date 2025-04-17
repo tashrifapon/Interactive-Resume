@@ -1,8 +1,12 @@
+<!--
+    change class (buttons and bullet points) and data-filter names here also to your needs
+-->
 
 <!--
-<center><embed src="{{ url_for('static', filename='TASE.pdf') }}" width="80%" height="600px" type="application/pdf"></center>
--->        
-
+    you can make this longer than your resume, but do it well!
+    I would add some more bullet points
+    AND/OR an INTERESTS section
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,89 +52,90 @@
         <h1>Tashrif Apon</h1>
         <p style="text-align: center;">East Elmhurst, NY 11369 | (929) 346-9867 | tashrifapon2001@gmail.com | <a id="linkedin" href="https://www.linkedin.com/in/tashrifApon" onclick="toLink('linkedin')">LinkedIn</a> | <a id="portfolio" href="https://tashrifapon.pythonanywhere.com/" onclick="toLink('portfolio')">Portfolio</a> | <a id="github" href="https://github.com/tashrifapon" onclick="toLink('github')">GitHub</a></p>
         
+        <h2>EDUCATION</h2>
+        <p><strong>CUNY Baruch College</strong>, Mathematics BA <span style="float: right;"><strong>Jan. 2022 – Sept. 2024</strong></span></p>
+        <p><b>Coursework:</b> Data Structures • Algorithms • Object Oriented Programming • Data Science</p>
+
+        <h2>TECHNICAL SKILLS</h2>
+        <p><b>Programming Languages:</b> Python • JavaScript • SQL • HTML • CSS • Power Fx • C++ • C# (.NET)</p>
+        <p><b>Libraries & Frameworks:</b> Flask • SQLAlchemy • Selenium • nltk • BeautifulSoup • numpy • scipy • pandas • json</p>
+        <p><b>Tools:</b> VS Code • Azure DevOps (MS TFS) • Jupyter Notebook • DB Browser • GitHub</p>
+        <p><b>Databases:</b> MS SQL • SQLite • NoSQL • MS Lists</p>
+
         <h2>WORK EXPERIENCE</h2>
-        <p><strong>NYC AG, LLC</strong> <span style="float: right;"><strong>Staten Island, NY</strong></span></p>
-        <p><i>Data Engineer Contractor</i> <span style="float: right;">August 2024 – January 2025</span></p>
+        <p><strong>NYC AG, LLC</strong> <span style="float: right;">Staten Island, NY (Remote)</span></p>
+        <p><i>Data Engineer Contractor</i> <span style="float: right;"><strong>Aug. 2024 – Jan. 2025</strong></span></p>
         <p>
             <ul>
-                <li><span>Developed an automated <b>data mining SaaS</b>, increasing data output approaching <b>200%</b> and saving <b>$12K+</b> yearly.</span></li>
-                <li><span>Performed data cleaning, visualization and analysis in <b>Excel</b> to extract insights for presentation to stakeholders.</span></li>
+                <li><span>Developed an automated data mining SaaS, increasing data output approaching 200% and saving $12K+ yearly</span></li>
+                <li><span class="db">Improved ETL process by implementing advanced data validation techniques, improving data accuracy by 40%</span></li>
             </ul>
         </p>
 
-        <p style="padding-top: 10px;"><strong>NYC Department of Health and Mental Hygiene</strong> <span style="float: right;"><strong>Long Island City, NY</strong></span></p>
-        <p><i>Backend Software Engineer Intern</i> <span style="float: right;">August 2024 – December 2024</span></p>
+        <p style="padding-top: 10px;"><strong>NYC Department of Health and Mental Hygiene</strong> <span style="float: right;">Long Island City, NY</span></p>
+        <p><i>Backend Software Engineer Intern</i> <span style="float: right;"><strong>Aug. 2024 – Dec. 2024</strong></span></p>
         <p>
             <ul>
-                <li><span class="db">Created <b>MS SQL</b> database structures involving <b>50K+</b> records for new feature to avoid HIPPA violation fines of <b>$2M+.</b></span></li>
-                <li><span class="c-db">Optimized backend logic to reduce <b>SQL</b> database server calls by <b>50%</b> and <b>C#</b> function calls by approximately <b>88%</b>.</span></li>
-                <li><span class="py">Automated the process of downloading <b>625K+</b> datasets via <b>Selenium</b> and <b>Python</b>, saving developers approximately <b>9</b> weeks of manual work, or <b>$15K+</b> in labor costs.</span></li>
-                <li><span class="c-dev">Documented <b>C#</b> implementation upon reviewing <b>2K+</b> lines of code in <b>Azure DevOps</b> to assist features integrations.</span></li>
-                <li><span class="fe">Designed <b>7 UI/UX</b> proposals using <b>HTML</b>, <b>CSS</b>, and <b>Bootstrap</b>.</span></li>
+                <li><span class="db">Created complex MS SQL database structures via T-SQL for 50K+ records to save $2M+</span></li>
+                <li><span class="c-db">Optimized backend logic to reduce SQL database server calls by 50% and C# function calls by approximately 88%</span></li>
+                <li><span class="py">Automated ETL process for 625K+ datasets via Selenium and Python, saving developers ~9 weeks or $15K+</span></li>
+                <li><span class="c-dev">Documented C# implementation upon reviewing 2K+ lines of code in Azure DevOps to assist features integrations</span></li>
+                <li><span class="fe">Designed 7 UI/UX proposals using HTML, CSS, and Bootstrap to enhance user experience</span></li>
             </ul>
         </p>
 
-        <p style="padding-top: 10px;"><strong>Metropolitan Transit Authority</strong> <span style="float: right;"><strong>Bronx, NY</strong></span></p>
-        <p><i>Full Stack Software Engineer Intern</i> <span style="float: right;">September 2023 – June 2024</span></p>
+        <p style="padding-top: 10px;"><strong>Metropolitan Transit Authority</strong> <span style="float: right;">Bronx, NY</span></p>
+        <p><i>Full Stack Software Engineer Intern</i> <span style="float: right;"><strong>Sept. 2023 – Jun. 2024</strong></span></p>
         <p>
             <ul>
-                <li><span class="fe-po">Spearheaded the <b>full stack</b> development of a <b>CRUD</b> web-app in <b>PowerApps</b> to eliminate an annual paper trail of <b>1K+</b> and the need for physical meetings to meet future business processes.</span></li>
-                <li><span class="db-po">Architected and implemented an innovative <b>ETL</b> system involving <b>Excel</b>, <b>3 MS Lists</b> databases and <b>1 relational database</b> to enforce <b>user authentication</b> and real-time data tracking, ensuring <b>data governance</b>.</span></li>
-                <li><span class="fe-db-po">Developed a micro-service <b>Sharepoint</b> site to enable a one-stop shop for document printing, viewing, and uploading.</span></li>
-                <li><span class="po">Automated notifications workflows in <b>PowerAutomate</b> to enhance team efficiency.</span></li>
-                <li><span class="po-dev">Debugged and documented <b>Power Fx</b> code to deliver production ready software.</span></li>
-                <li><span class="py-po">Generated <b>Power Fx</b> code in <b>Python</b> to accelerate the <b>SDLC</b>.</span></li>
+                <li><span class="fe-db-po">Led full stack CRUD development of in PowerApps and 1 microservice SharePoint site to digitize workflows</span></li>
+                <li><span class="db-po">Architected innovative ETL system via REST APIs involving 3 MS Lists databases and 1 relational database to enforce user authentication and real-time data tracking, ensuring data governance</span></li>
+                <li><span class="po">Automated Outlook notifications in PowerAutomate to boost team efficiency and maintain accountability</span></li>
+                <li><span class="po-dev">Debugged and documented Power Fx code to deliver production grade software and aid future maintenance</span></li>
+                <li><span class="py-po">Generated Power Fx code in Python to accelerate the SDLC</span></li>
             </ul>
         </p>
 
-        <p style="padding-top: 10px;"><strong>Skillfully</strong> <span style="float: right;"><strong>Remote</strong></span></p>
-        <p><i>Technology Consultant Extern</i> <span style="float: right;">June 2023 – August 2023</span></p>
+        <p style="padding-top: 10px;"><strong>Skillfully</strong> <span style="float: right;">San Francisco, CA (Remote)</span></p>
+        <p><i>Technology Consultant Extern</i> <span style="float: right;"><strong>Jun. 2023 – Aug. 2023</strong></span></p>
         <p>
             <ul>
-                <li><span class="dev">Applied <b>Agile</b> methodologies to enhance the <b>SDLC</b> via frameworks and project planning.</span></li>
+                <li><span class="dev">Applied Agile methodologies to improve the SDLC via structured project planning</span></li>
             </ul>
         </p>
 
         <h2>PROJECTS</h2>
-        <p><b><a href="https://tashrifapon.pythonanywhere.com/TashrifAponResume">Interactive Resume</a></b> | <i>Python, Flask, JavaScript, HTML, CSS, JSON, NoSQL, REST APIs</i> <span style="float: right;">February 2025 - Present</span></p>
+        <p><b><a href="https://tashrifapon.pythonanywhere.com/TashrifAponResume">Interactive Resume</a></b> | <i>Python, Flask, JavaScript, HTML, CSS, JSON, NoSQL, REST APIs</i> <span style="float: right;"><strong>Feb. 2025 - Present</strong></span></p>
         <p>
             <ul>
-                <li><span class="py-fe-db">Built an interactive resume with real-time metrics.</span></li>
+                <li><span class="py-fe-db">Built an interactive resume to track user activity and serve dynamic content via DOM manipulation, increasing site visits by 108% and gaining commendation from professionals in Staffing, Venture Capital, Consulting and FinTech</span></li>
+                <li><span class="py-fe-db">Integrated engagement analytics via 2 REST APIs, offering actionable feedback for continuous improvement</span></li>
             </ul>
         </p>
         
-        <p style="padding-top: 10px;"><b><a href="https://tashrifapon.pythonanywhere.com/Islamic_Midnight">Islamic Midnight Calendar</a></b> | <i>Python, Flask, jinja2, HTML, CSS, JSON, NoSQL, REST APIs</i> <span style="float: right;">2023 - Present</span></p>
+        <p style="padding-top: 10px;"><b><a href="https://tashrifapon.pythonanywhere.com/Islamic_Midnight">Islamic Midnight Calendar</a></b> | <i>Python, Flask, jinja2, HTML, CSS, JSON, NoSQL, REST APIs</i> <span style="float: right;"><strong>2023 - Present</strong></span></p>
         <p>
             <ul>
-                <li><span class="py"><b>Refactored</b> the codebase to implement <b>modularity</b>, eliminating the need for <b>190</b> monthly codebase updates, resulting in a near <b>100%</b> reduction in maintenance frequency.</span></li>
-                <li><span class="py-db">Gathered data via <b>webhooks</b> for <b>360+</b> records and generated <b>17%</b> more data to then input into <b>NoSQL</b> database.</span></li>
-                <li><span class="py-fe">Optimized backend algorithm from <b>O(n)</b> to <b>O(1)</b>, reducing latency by up to <b>1197%</b> and frontend code by up to <b>97%</b>.</span></li>
+                <li><span class="py">Refactored codebase for modularity, eliminating 190 monthly updates, reducing maintenance by a near 100%</span></li>
+                <li><span class="py-db">Mined 360+ external records via webhooks and generated 17% more data into document database called by API</span></li>
+                <li><span class="py-fe">Optimized backend algorithm from O(n) to O(1) to reduce latency by up to 1197% and frontend code by up to 97%</span></li>
             </ul>
         </p>
 
-        <p style="padding-top: 10px;"><b>LPAedu</b> | <i>Python, Flask, jinja2, HTML, CSS, SQLite, SQLAlchemy, NoSQL</i> <span style="float: right;">January 2023 - April 2024</span></p>
+        <p style="padding-top: 10px;"><b>LPAedu</b> | <i>Python, Flask, jinja2, HTML, CSS, SQLite, SQLAlchemy, NoSQL</i> <span style="float: right;"><strong>Jan. 2023 - Apr. 2024</strong></span></p>
         <p>
             <ul>
-                <li><span>Built an exam-taking platform for <b>50+</b> users to take exams with <b>50+</b> questions and view their performance metrics.</span></li>
-                <li><span class="py-db">Incorporated <b>OOP</b> and remodeled <b>2 database schemas</b> and <b>NoSQL</b> databases to accelerate the <b>SDLC</b>.</span></li>
-                <li><span class="py-db">Implemented <b>ORM</b> (Object-Relational Mapping) through <b>SQLAlchemy</b> to protect against <b>SQL injections</b>.</span></li>
-                <li><span class="dev"><b>Debugged</b> directory and database errors to restore website accessibility.</span></li>
-                <li><span class="dev">Led <b>2</b> junior programmers to reduce individual workload by <b>67%</b> through the use of <b>GitHub</b> and Markdown files.</span></li>
+                <li><span>Built an exam-taking platform for 50+ users to take exams with 50+ questions and view their performance metrics</span></li>
+                <li><span class="py-db">Incorporated OOP and remodeled 2 database schemas and NoSQL databases to accelerate the SDLC</span></li>
+                <li><span class="py-db">Implemented SQLAlchemy ORM (Object-Relational Mapping) to prevent SQL injections</span></li>
+                <li><span class="dev">Debugged directory and database errors to restore website accessibility</span></li>
+                <!-- your last line should have this style -->
+                <li style="margin-bottom: 20px; bottom: 50px"><span class="dev">Led 2 junior programmers to reduce individual workload by 67% through the use of GitHub and Markdown files</span></li>
             </ul>
-        </p>
-
-        <h2>TECHNICAL SKILLS</h2>
-        <p><b>Programming Languages:</b> Python, SQL, HTML, CSS, Power Fx (Power Platform), C++, C# (.NET), JavaScript</p>
-        <p><b>Libraries & Frameworks:</b> Flask, SQLAlchemy, Selenium, openpyxl, nltk, BeautifulSoup, numpy, scipy, pandas, json</p>
-        <p><b>Tools:</b> VS Code, Azure DevOps (MS TFS), Jupyter Notebook, DB Browser for SQLite, GitHub, Microsoft Office Suite</p>
-        <p><b>Databases:</b> MS SQL, MS Lists, Excel, SQLite, NoSQL</p>
-        
-        <h2>EDUCATION</h2>
-        <p>CUNY Baruch College, <strong>Bachelor of Arts in Mathematics</strong> <span style="float: right;"><strong>September 2024</strong></span></p>
-        <p style="margin-bottom: 20px; bottom: 50px">Related Courses: Algorithms & Programming I & II, Math for Data Analysis, Intro to Machine Learning</p>
+        </p>        
     </div>
 
-    <iframe class="pdf-container" src="static/TASE.pdf#navpanes=1&zoom=Auto"></iframe>
+    <iframe class="pdf-container" src="static/TASE.pdf#zoom=auto"></iframe>
 
     <div class="footer">&copy; 2025 Tashrif Apon</div>
 
