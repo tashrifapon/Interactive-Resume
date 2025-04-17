@@ -1,2 +1,2 @@
 # Interactive-Resume
-<img src="screenshot.jpg"></img>
+<img src="readme_content/screenshot.jpg"></img>
