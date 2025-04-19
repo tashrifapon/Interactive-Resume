@@ -129,6 +129,7 @@ I thought I would just make it a bit more acceptable: a background color and som
 #### ⛓️ APIs:
 - Internal: Read & Write Metrics
 - External: Geolocation
+- ❌ No Dirty Reads/Writes (FileLock)
 </details>
 
 ### Feature-Service Matrix
@@ -169,7 +170,7 @@ I thought I would just make it a bit more acceptable: a background color and som
     <td></td>
     <td></td>
     <td>☑</td>
-    <td>☑</td>
+    <td></td>
     <td></td>
   </tr>
 
