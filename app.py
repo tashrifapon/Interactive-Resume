@@ -3,6 +3,7 @@ import json
 import requests
 import os
 from dotenv import load_dotenv
+from filelock import FileLock
 
 app = Flask(__name__)
 
@@ -13,12 +14,16 @@ passkey_resume = os.getenv("PASSKEY_RESUME") # we respect privacy over here
 
 #  HELPER FUNCTIONS
 def read_json(file_name):
-    with open(file_name, "r") as file:
-        return json.load(file)
+    lock = FileLock(file_name + ".lock")
+    with lock:
+        with open(file_name, "r") as file:
+            return json.load(file)
      
 def write_json(file_name, data):
-    with open(file_name, "w") as file:
-        json.dump(data, file, indent=2)
+    lock = FileLock(file_name + ".lock")
+    with lock:
+        with open(file_name, "w") as file:
+            json.dump(data, file, indent=2)
 
 def get_ip_info(ip):
     try:
