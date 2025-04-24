@@ -1,4 +1,4 @@
-<h1><a href="https://tashrifapon.pythonanywhere.com/TashrifAponResume">Interactive Resume</a></h1>
+<h1><a href="https://tashrifapon.pythonanywhere.com/TashrifAponResume">Interactive Resume (Click Me!)</a></h1>
 <a href="https://tashrifapon.pythonanywhere.com/TashrifAponResume"><img src="readme_content/main.jpg"></img></a>
 
 <h3 align="center">Metrics (Backend)</h3>
