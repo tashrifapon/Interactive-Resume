@@ -275,7 +275,7 @@ I thought I would just make it a bit more acceptable: a background color and som
 </details>
 
 ### More Files
-##### These have comments (up to top and throughout) regarding the changes needed
+##### These have comments (up on top and throughout) regarding the changes needed
 - resume.css
 - resume.js
 
